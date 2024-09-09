@@ -1,0 +1,99 @@
+#:import utils kivy.utils
+
+FloorWidget:
+    size_hint: (0.15, 0.25)
+    pos_hint: {'center_x':.62   , 'center_y':.15}
+    SurfaceWidget: # gap
+        bg_color: utils.rgba('#eceff1')
+        shadow: False
+        pos_hint: {'center_x':.9, 'center_y':.28}
+        size_hint: (0.5, 0.6)
+    SurfaceWidget: # gap
+        bg_color: utils.rgba('#eceff1')
+        shadow: False
+        pos_hint: {'center_x':.04, 'center_y':.15}
+        size_hint: (0.1, 0.32)
+    BoxLayout:
+        size_hint: (0.16,0.16)
+        pos_hint: {'center_x':.07, 'center_y':.43 }
+        Image:
+            source: 'assets/icons/stairs.png'
+            size_hint: (1, 1)
+    RoomWidget:
+        size_hint: (0.2,0.09)
+        pos_hint: {'center_x':.21, 'center_y':.08 }
+        RoomNamePill:
+            text: 'Кабинет М9'
+            font_size: 12
+    RoomWidget:
+        size_hint: (0.09,0.1)
+        pos_hint: {'center_x':.17, 'center_y':.19 }
+        RoomNamePill:
+            text: 'Кабинет М10'
+            font_size: 12
+    RoomWidget:
+        size_hint: (0.09,0.08)
+        pos_hint: {'center_x':.22, 'center_y':.42 }
+        RoomNamePill:
+            text: 'Кабинет М11'
+            font_size: 12
+    RoomWidget:
+        size_hint: (0.1,0.08)
+        pos_hint: {'center_x':.22, 'center_y':.51 }
+        RoomNamePill:
+            text: 'Кабинет М12'
+            font_size: 12
+    RoomWidget:
+        size_hint: (0.2,0.08)
+        pos_hint: {'center_x':.25, 'center_y':.61 }
+        RoomNamePill:
+            text: 'Кабинет М13'
+            font_size: 12
+    RoomWidget:
+        size_hint: (0.24,0.07)
+        pos_hint: {'center_x':.51, 'center_y':.62 }
+        RoomNamePill:
+            text: 'Кабинет М1'
+            font_size: 12
+    RoomWidget:
+        size_hint: (0.22,0.07)
+        pos_hint: {'center_x':.52, 'center_y':.54 }
+        RoomNamePill:
+            text: 'Кабинет М2'
+            font_size: 12
+    RoomWidget:
+        size_hint: (0.24,0.07)
+        pos_hint: {'center_x':.51, 'center_y':.46 }
+        RoomNamePill:
+            text: 'Кабинет М3'
+            font_size: 12
+    RoomWidget:
+        size_hint: (0.24,0.07)
+        pos_hint: {'center_x':.51, 'center_y':.38 }
+        RoomNamePill:
+            text: 'Кабинет М4'
+            font_size: 12
+    RoomWidget:
+        size_hint: (0.24,0.07)
+        pos_hint: {'center_x':.51, 'center_y':.3 }
+        RoomNamePill:
+            text: 'Кабинет М5'
+            font_size: 12
+    RoomWidget:
+        size_hint: (0.24,0.07)
+        pos_hint: {'center_x':.51, 'center_y':.22 }
+        RoomNamePill:
+            text: 'Кабинет М6'
+            font_size: 12
+    RoomWidget:
+        size_hint: (0.22,0.07)
+        pos_hint: {'center_x':.52, 'center_y':.14 }
+        RoomNamePill:
+            text: 'Кабинет М7'
+            font_size: 12
+    RoomWidget:
+        size_hint: (0.24,0.07)
+        pos_hint: {'center_x':.51, 'center_y':.06 }
+        RoomNamePill:
+            text: 'Кабинет М8'
+            font_size: 12

@@ -1,0 +1,44 @@
+FloorWidget:
+    size_hint: (0.25, 0.3)
+    pos_hint: {'center_x':.35, 'center_y':.58}
+    SurfaceWidget: # gap
+        bg_color: utils.rgba('#eceff1')
+        shadow: False
+        pos_hint: {'center_x':.08, 'center_y':.34}
+        size_hint: (0.2, 0.7)
+    AtriumWidget:
+        size_hint: (0.15,0.45)
+        pos_hint: {'center_x':.43, 'center_y':.5 }
+        SubduedRoomName:
+            text: 'Атриум'
+    AtriumWidget:
+        size_hint: (0.15,0.45)
+        pos_hint: {'center_x':.77, 'center_y':.5 }
+        SubduedRoomName:
+            text: 'Атриум'
+    BoxLayout:
+        size_hint: (0.12,0.12       )
+        pos_hint: {'center_x':.56, 'center_y':.52 }
+        Image:
+            source: 'assets/icons/stairs.png'
+            size_hint: (1, 1)
+    FinkiRoomWidget:
+        size_hint: (0.12,0.12)
+        pos_hint: {'center_x':.4, 'center_y':.1 }
+        RoomNamePill:
+            text: '112 ФЕИТ'
+    FinkiRoomWidget:
+        size_hint: (0.12,0.12)
+        pos_hint: {'center_x':.65, 'center_y':.1 }
+        RoomNamePill:
+            text: '110 ФЕИТ'
+    FinkiRoomWidget:
+        size_hint: (0.12,0.12)
+        pos_hint: {'center_x':.67, 'center_y':.9 }
+        RoomNamePill:
+            text: '123 МФ'
+    FinkiRoomWidget:
+        size_hint: (0.12,0.12)
+        pos_hint: {'center_x':.8, 'center_y':.9 }
+        RoomNamePill:
+            text: '124 МФ'

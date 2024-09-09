@@ -1,0 +1,19 @@
+#:import utils kivy.utils
+
+<SurfaceWidget>:
+    canvas.before:
+        Color:
+            rgba: utils.rgba('#e2e4e6') if self.shadow else (0,0,0,0)
+        BoxShadow:
+            pos: self.pos
+            size: self.size if self.shadow else (0,0)
+            offset: -5, -5
+            blur_radius: 0
+            spread_radius: 0, 0
+            border_radius: 5, 5, 5, 5
+        Color:
+            rgba: self.bg_color
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+            radius: [(5, 5), (5, 5), (5, 5), (5, 5)]

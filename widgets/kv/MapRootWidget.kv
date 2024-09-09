@@ -1,0 +1,97 @@
+<MapRootWidget>:
+    size_hint: None, None
+    size: (6000, 2500)
+    Label:
+        pos_hint: {'center_x':.5, 'center_y':1.1}
+        font_size: 64
+        text: 'Ул. Орце Николов'
+        color: (0,0,0,0.3)
+    Label:
+        canvas.before:
+            PushMatrix
+            Rotate:
+                angle: 90
+                axis: (0,0,1)
+                origin: self.center
+        canvas.after:
+            PopMatrix
+        pos_hint: {'center_x':1.05, 'center_y':.5}
+        font_size: 64
+        text: 'Ул. Никола тесла'
+        color: (0,0,0,0.3)
+    Label:
+        pos_hint: {'center_x':.5, 'center_y':-0.1}
+        font_size: 64
+        text: 'Ул. Руѓер Бошковиќ'
+        color: (0,0,0,0.3)
+    CampusWidget:
+        ParkingWidget:
+            size_hint: (0.28, 0.15)
+            pos_hint: {'center_x':.85, 'center_y':.88}
+            SubduedRoomName:
+                text: 'Паркинг ТМФ'
+                pos_hint: {'center_x':.52, 'center_y':.5}
+            Image:
+                opacity: 0.4
+                source: 'assets/icons/parking.png'
+                size_hint: (0.48, 0.3)
+                pos_hint: {'center_x':.4, 'center_y':.5}
+        ParkWidget:
+            size_hint: (0.08, 0.25)
+            pos_hint: {'center_x':.95, 'center_y':.15}
+        ParkWidget:
+            size_hint: (0.15, 0.42)
+            pos_hint: {'center_x':.62, 'center_y':.67}
+        ParkingWidget:
+            size_hint: (0.18, 0.1)
+            pos_hint: {'center_x':.62, 'center_y':.39}
+            SubduedRoomName:
+                text: 'Паркинг ТМФ'
+                pos_hint: {'center_x':.52, 'center_y':.5}
+            Image:
+                opacity: 0.4
+                source: 'assets/icons/parking.png'
+                size_hint: (0.48, 0.3)
+                pos_hint: {'center_x':.4, 'center_y':.5}
+        ParkWidget:
+            size_hint: (0.09, 0.45)
+            pos_hint: {'center_x':.15, 'center_y':.56}
+        ParkWidget:
+            size_hint: (0.07, 0.25)
+            pos_hint: {'center_x':.48, 'center_y':.155}
+        ParkWidget:
+            size_hint: (0.3, 0.05)
+            pos_hint: {'center_x':.3, 'center_y':.055}
+        ParkWidget:
+            size_hint: (0.08, 0.23)
+            pos_hint: {'center_x':.15, 'center_y':.145}
+        ParkingWidget:
+            size_hint: (0.08, 0.16)
+            pos_hint: {'center_x':.24, 'center_y':.18}
+            Image:
+                opacity: 0.4
+                source: 'assets/icons/parking.png'
+                size_hint: (0.25, 0.25)
+                pos_hint: {'center_x':.5, 'center_y':.5}
+        ParkingWidget:
+            size_hint: (0.26, 0.15)
+            pos_hint: {'center_x':.45, 'center_y':.88}
+            SubduedRoomName:
+                text: 'Паркинг ФЕИТ'
+                pos_hint: {'center_x':.52, 'center_y':.5}
+            Image:
+                opacity: 0.4
+                source: 'assets/icons/parking.png'
+                size_hint: (0.48, 0.3)
+                pos_hint: {'center_x':.4, 'center_y':.5}
+        ParkingWidget:
+            size_hint: (0.07, 0.15)
+            pos_hint: {'center_x':.21, 'center_y':.88}
+            SubduedRoomName:
+                text: 'Паркинг МФ'
+                pos_hint: {'center_x':.64, 'center_y':.5}
+            Image:
+                opacity: 0.4
+                source: 'assets/icons/parking.png'
+                size_hint: (0.48, 0.3)
+                pos_hint: {'center_x':.3, 'center_y':.5}

@@ -1,0 +1,25 @@
+FloorWidget:
+    size_hint: (0.17, 0.2)
+    pos_hint: {'center_x':.41, 'center_y':.15}
+    RoomWidget:
+        size_hint: (0.2,0.3)
+        pos_hint: {'center_x':.37, 'center_y':.8 }
+        RoomNamePill:
+            text: 'Кабинет Електротехника'
+    FinkiRoomWidget:
+        size_hint: (0.2,0.2)
+        pos_hint: {'center_x':.5, 'center_y':.36 }
+        RoomNamePill:
+            text: 'Лаб. СОЦД'
+    BoxLayout:
+        size_hint: (0.16,0.16)
+        pos_hint: {'center_x':.3, 'center_y':.5 }
+        Image:
+            source: 'assets/icons/stairs.png'
+            size_hint: (1, 1)
+    BoxLayout:
+        size_hint: (0.16,0.16)
+        pos_hint: {'center_x':.59   , 'center_y':.9}
+        Image:
+            source: 'assets/icons/entrance.png'
+            size_hint: (1, 1)
