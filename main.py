@@ -1,3 +1,5 @@
+import threading
+
 import requests
 from kivy.metrics import dp
 from kivymd.app import MDApp
@@ -77,6 +79,9 @@ class MapApp(MDApp):
         top_app_bar.title = f"ФИНКИ кампус (спрат {floor_number})"
 
     def show_room_info_dialog(self, room_name):
+        threading.Thread(target=self.fetch_schedule, args=(room_name,)).start()
+
+    def fetch_schedule(self, room_name):
         schedule_url = f"http://localhost:8081/api/schedule?roomName={room_name}"
 
         try:
@@ -85,10 +90,10 @@ class MapApp(MDApp):
 
             schedule_data = response.json()
 
-            schedule_content = "\n".join([f"{course} во {time}" for course, time in schedule_data.items()])
+            schedule_content = "\n".join([f"{course}: {time}" for course, time in schedule_data.items()])
 
         except requests.RequestException as e:
-            schedule_content = "Error fetching schedule data"
+            schedule_content = "Грешка при барање информации за распоред"
 
         self.update_dialog(room_name, schedule_content)
 
