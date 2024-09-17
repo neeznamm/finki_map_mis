@@ -1,4 +1,4 @@
-from finki_map_mis.widgets.py.SurfaceWidget import SurfaceWidget
+from widgets.py.SurfaceWidget import SurfaceWidget
 
 
 class FloorWidget(SurfaceWidget):

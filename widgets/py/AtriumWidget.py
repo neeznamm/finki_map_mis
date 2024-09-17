@@ -1,6 +1,6 @@
 from kivy.properties import ColorProperty
 
-from finki_map_mis.widgets.py.RoomWidget import RoomWidget
+from widgets.py.RoomWidget import RoomWidget
 
 
 class AtriumWidget(RoomWidget):

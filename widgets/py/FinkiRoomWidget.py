@@ -1,7 +1,7 @@
 from kivy.properties import ColorProperty
 from kivymd.app import MDApp
 
-from finki_map_mis.widgets.py.RoomWidget import RoomWidget
+from widgets.py.RoomWidget import RoomWidget
 
 
 class FinkiRoomWidget(RoomWidget):

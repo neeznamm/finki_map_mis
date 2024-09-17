@@ -10,19 +10,19 @@ from kivymd.uix.dialog import MDDialog
 from kivymd.uix.menu import MDDropdownMenu
 from kivy.clock import mainthread
 
-from finki_map_mis.widgets.py.AtriumWidget import AtriumWidget
-from finki_map_mis.widgets.py import FloorWidget
-from finki_map_mis.widgets.py.CampusWidget import CampusWidget
-from finki_map_mis.widgets.py.DiagonalLineTexturedWidget import DiagonalLineTexturedWidget
-from finki_map_mis.widgets.py.FinkiRoomWidget import FinkiRoomWidget
-from finki_map_mis.widgets.py.ParkWidget import ParkWidget
-from finki_map_mis.widgets.py import ParkingWidget
-from finki_map_mis.widgets.py.Root import Root
-from finki_map_mis.widgets.py import SubduedRoomName
-from finki_map_mis.widgets.py.RoomNamePill import RoomNamePill
-from finki_map_mis.widgets.py.RoomWidget import RoomWidget
-from finki_map_mis.widgets.py.MapRootWidget import MapRootWidget
-from finki_map_mis.widgets.py.SurfaceWidget import SurfaceWidget
+from widgets.py.AtriumWidget import AtriumWidget
+from widgets.py import FloorWidget
+from widgets.py.CampusWidget import CampusWidget
+from widgets.py.DiagonalLineTexturedWidget import DiagonalLineTexturedWidget
+from widgets.py.FinkiRoomWidget import FinkiRoomWidget
+from widgets.py.ParkWidget import ParkWidget
+from widgets.py import ParkingWidget
+from widgets.py.Root import Root
+from widgets.py import SubduedRoomName
+from widgets.py.RoomNamePill import RoomNamePill
+from widgets.py.RoomWidget import RoomWidget
+from widgets.py.MapRootWidget import MapRootWidget
+from widgets.py.SurfaceWidget import SurfaceWidget
 
 Window.clearcolor = (.961, .969, .973, 1)
 

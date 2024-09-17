@@ -1,7 +1,7 @@
 from kivy.properties import ColorProperty
 
-from finki_map_mis.widgets.py.DiagonalLineTexturedWidget import DiagonalLineTexturedWidget
-from finki_map_mis.widgets.py.SurfaceWidget import SurfaceWidget
+from widgets.py.DiagonalLineTexturedWidget import DiagonalLineTexturedWidget
+from widgets.py.SurfaceWidget import SurfaceWidget
 
 
 class ParkingWidget(SurfaceWidget, DiagonalLineTexturedWidget):

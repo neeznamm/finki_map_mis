@@ -3,8 +3,8 @@ import os
 from kivy.lang import Builder
 from kivy.uix.scatterlayout import ScatterLayout
 
-from finki_map_mis.widgets.py.CampusWidget import CampusWidget
-from finki_map_mis.widgets.py.FloorWidget import FloorWidget
+from widgets.py.CampusWidget import CampusWidget
+from widgets.py.FloorWidget import FloorWidget
 
 Builder.load_file(os.path.join(os.path.dirname(__file__), '../kv/MapRootWidget.kv'))
 
